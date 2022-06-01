@@ -1,0 +1,14 @@
+{
+  "Project": {
+    "title": { "string": {} },
+    "stack": {
+      "hasMany": "Stack"
+    }
+  },
+  "Stack": {
+    "body": { "string": {} },
+    "project": {
+      "belongsTo": "Project"
+    }
+  }
+}
