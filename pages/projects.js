@@ -1,11 +1,11 @@
-import {useState, useEffect} from 'react'
+import { useEffect, useState} from 'react'
 import Link from 'next/link'
+import MainContainer from '../components/MainContainer'
 
 const Projects = ({projects}) => {
    
- 
-    return (
-        <div>
+     return (
+        <MainContainer keywords={'projects next js'}>
             <h1>My Best Projects</h1>
             <ul className="projects-list">
                 {projects.map(project => 
@@ -16,7 +16,7 @@ const Projects = ({projects}) => {
                </li>
                 )}
             </ul>
-        </div>
+        </MainContainer>
     );
 }
 
