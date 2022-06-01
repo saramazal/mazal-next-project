@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&family=Montserrat:wght@500&family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap");
+
+/* Global styles */
+:root {
+  --game-color-primary: #FF0099;
+  --game-color-secondary: #00ffbf;
+  --game-color-accent: #ff0000;
+  --game-color-body-font: #f4f4f4;
+  --game-color-dark: #1c2333;
+  --game-color-dgray: #3e3f45;
+  --game-color-lgray: #85868a;
+  --game-color-light: #e1e0d9;
+  --game-font-brand: "Righteous", cursive;
+  --font-primary: "Space Mono", monospace;
+  --game-font-accent: "Inconsolata", monospace;
+  --game-font-secondary: "Montserrat Alternates", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  color: var(--game-color-secondary);
+  background-color: var(--game-color-dark);
+  width: 100%;
+  height: 100vh;
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 30px;
+}
+h1:hover {
+    color: var(--game-color-primary);
+}
+.header {
+  margin-top: 40px;
+}
+ul {
+  font-size: 1.7em;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--game-color-secondary);
+  padding: 15px;
+}
+
+a:hover {
+  color: var(--game-color-primary);
+}
+
+
+
+p {
+  font-size: 1.4rem;
+}
