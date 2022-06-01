@@ -31,33 +31,41 @@ body {
   height: 100vh;
 }
 h1 {
-    font-size: 2em;
-    text-align: center;
-    padding-top: 30px;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 30px;
 }
 h1:hover {
-    color: var(--game-color-primary);
+  color: #fff;
 }
-.header {
-  margin-top: 40px;
+
+header {
+  margin-top: 30px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  color: var(--game-color-light);
 }
 ul {
-  font-size: 1.7em;
+  font-size: 2em;
   padding-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: var(--game-color-secondary);
-  padding: 15px;
+  font-size: 0.5em;
+  color: var(--game-color-light);
 }
 
 a:hover {
-  color: var(--game-color-primary);
+  color: var(--game-color-secondary);
 }
 
 

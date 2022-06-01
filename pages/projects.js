@@ -1,15 +1,13 @@
-import { useState } from 'react'
+import {useState, useEffect} from 'react'
 import Link from 'next/link'
 
-const Projects = () => {
-    const [projects, setProjects] = useState([
-        {id: 1, title: 'Music App'},
-        {id: 2, title: 'Learning Portal'}
-    ])
+const Projects = ({projects}) => {
+   
+ 
     return (
         <div>
             <h1>My Best Projects</h1>
-            <ul>
+            <ul className="projects-list">
                 {projects.map(project => 
                 <li key={project.id}>
                 <Link href={`/projects/${project.id}`}>
@@ -23,3 +21,11 @@ const Projects = () => {
 }
 
 export default Projects;
+
+export async function getStaticProps(context) {
+    const response = await fetch(`https://mockend.com/saramazal/mazal-next-project/projects`)
+    const projects = await response.json()
+      return {
+        props: {projects},
+    }
+}
